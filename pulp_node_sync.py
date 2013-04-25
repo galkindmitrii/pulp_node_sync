@@ -1,4 +1,4 @@
-#!/usr/local/bin/python2.7
+#!/usr/bin/env python
 '''
 Trigger synchronization of "child" pulp node repositories upon modificationt of
 parent pulp repository. Performs sync of repo when a "repo.publish.finish"
