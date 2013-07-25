@@ -90,7 +90,7 @@ def sync_node_repo(node_id, repo_id):
 def get_nodes():
     " Returns list of child nodes (satelites)."
     consumers = get('/consumers/')
-    return [ c['id'] for c in consumers if c['notes']['_child-node']]
+    return [ c['id'] for c in consumers if c['notes'].get('_child-node', False) ]
 
 
 def get_nodes_repos(node):
